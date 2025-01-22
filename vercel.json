@@ -1,15 +1,13 @@
 {
-    "redirects": [
+    "headers": [
         {
-            "source": "/old-page",
-            "destination": "/new-page",
-            "permanent": true
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/old-path",
-            "destination": "/new-path"
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Custom-Header",
+                    "value": "SomeValue"
+                }
+            ]
         }
     ]
 }
