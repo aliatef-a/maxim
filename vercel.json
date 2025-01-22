@@ -1,13 +1,8 @@
 {
-    "headers": [
+    "rewrites": [
         {
             "source": "/(.*)",
-            "headers": [
-                {
-                    "key": "X-Custom-Header",
-                    "value": "SomeValue"
-                }
-            ]
+            "destination": "/index.html"
         }
     ]
 }
